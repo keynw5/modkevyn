@@ -1,0 +1,1 @@
+ #Construir um algoritmoque receba cem números e informe a média e a soma entre os números positivos.
