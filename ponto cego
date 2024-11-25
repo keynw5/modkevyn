@@ -1,0 +1,711 @@
+pontuacao = 0
+pontuacao_minima_nivel1 = 7  # Número mínimo de acertos para passar de nível
+
+# Nível 1
+print("Nível 1")
+
+# Pergunta 1
+print("1) Qual é a capital do Brasil?")
+print("a) Brasília")
+print("b) São Paulo")
+print("c) Rio de Janeiro")
+print("d) Salvador")
+resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+if resposta.lower() == "a":
+    print("Correto!")
+    pontuacao += 1
+else:
+    print("Incorreto!")
+
+# Pergunta 2
+print("\n2) Qual é a maior floresta tropical do mundo?")
+print("a) Floresta Amazônica")
+print("b) Floresta Negra")
+print("c) Floresta de Sherwood")
+print("d) Floresta do Congo")
+resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+if resposta.lower() == "a":
+    print("Correto!")
+    pontuacao += 1
+else:
+    print("Incorreto!")
+
+# Pergunta 3
+print("\n3) Qual é o maior planeta do sistema solar?")
+print("a) Terra")
+print("b) Marte")
+print("c) Júpiter")
+print("d) Saturno")
+resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+if resposta.lower() == "c":
+    print("Correto!")
+    pontuacao += 1
+else:
+    print("Incorreto!")
+
+# Pergunta 4
+print("\n4) Qual é o país com maior população do mundo?")
+print("a) China")
+print("b) Índia")
+print("c) Estados Unidos")
+print("d) Indonésia")
+resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+if resposta.lower() == "b":
+    print("Correto!")
+    pontuacao += 1
+else:
+    print("Incorreto!")
+
+# Pergunta 5
+print("\n5) Em qual continente fica o Egito?")
+print("a) Ásia")
+print("b) África")
+print("c) Europa")
+print("d) América do Norte")
+resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+if resposta.lower() == "b":
+    print("Correto!")
+    pontuacao += 1
+else:
+    print("Incorreto!")
+
+# Pergunta 6
+print("\n6) Quem pintou a Mona Lisa?")
+print("a) Vincent van Gogh")
+print("b) Pablo Picasso")
+print("c) Leonardo da Vinci")
+print("d) Michelangelo")
+resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+if resposta.lower() == "c":
+    print("Correto!")
+    pontuacao += 1
+else:
+    print("Incorreto!")
+
+# Pergunta 7
+print("\n7) Qual é o maior oceano do mundo?")
+print("a) Oceano Atlântico")
+print("b) Oceano Índico")
+print("c) Oceano Pacífico")
+print("d) Oceano Ártico")
+resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+if resposta.lower() == "c":
+    print("Correto!")
+    pontuacao += 1
+else:
+    print("Incorreto!")
+
+# Pergunta 8
+print("\n8) Quantos estados tem o Brasil?")
+print("a) 26")
+print("b) 27")
+print("c) 25")
+print("d) 28")
+resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+if resposta.lower() == "b":
+    print("Correto!")
+    pontuacao += 1
+else:
+    print("Incorreto!")
+
+# Pergunta 9
+print("\n9) Qual é o menor país do mundo?")
+print("a) Mônaco")
+print("b) Vaticano")
+print("c) Nauru")
+print("d) Malta")
+resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+if resposta.lower() == "b":
+    print("Correto!")
+    pontuacao += 1
+else:
+    print("Incorreto!")
+
+# Pergunta 10
+print("\n10) Qual é o animal terrestre mais rápido?")
+print("a) Guepardo")
+print("b) Leão")
+print("c) Cavalo")
+print("d) Tigre")
+resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+if resposta.lower() == "a":
+    print("Correto!")
+    pontuacao += 1
+else:
+    print("Incorreto!")
+#ver se passou
+if pontuacao >= pontuacao_minima_nivel1:
+    print(f"\nParabéns! Você acertou {pontuacao} de 10 perguntas e passou para o próximo nível!")
+
+else:
+    print(f"\nVocê acertou {pontuacao} de 10 perguntas. Infelizmente, não atingiu a pontuação mínima para passar de nível. Fim de jogo.")
+
+    # Continuando do Nível 1...
+
+# Verificar se o jogador passou para o Nível 2
+if pontuacao >= pontuacao_minima_nivel1:
+    print(f"\nParabéns! Você acertou {pontuacao} de 10 perguntas e passou para o Nível 2!")
+    
+    # Resetando a pontuação para o próximo nível
+    pontuacao = 0
+    pontuacao_minima_nivel2 = 12  # Número mínimo de acertos para passar para o próximo nível
+
+    # Nível 2
+    print("\nNível 2 - Intermediário")
+
+    # Pergunta 1
+    print("1) Qual é o maior país do mundo em área territrial?")
+    print("a) Canadá")
+    print("b) Rússia")
+    print("c) China")
+    print("d) Estados Unidos")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "b":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 2
+    print("\n2) Em que ano o homem pisou na Lua pela primeira vez?")
+    print("a) 1965")
+    print("b) 1969")
+    print("c) 1972")
+    print("d) 1967")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "b":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 3
+    print("\n3) Qual o elemento químico mais abundante na atmosfera da Terra?")
+    print("a) Oxigênio")
+    print("b) Nitrogênio")
+    print("c) Hidrogênio")
+    print("d) Carbono")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "b":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 4
+    print("\n4) Qual é o rio mais longo do mundo?")
+    print("a) Rio Nilo")
+    print("b) Rio Amazonas")
+    print("c) Rio Yangtze")
+    print("d) Rio Mississippi")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "b":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 5
+    print("\n5) Quem escreveu 'Dom Quixote'?")
+    print("a) William Shakespeare")
+    print("b) Gabriel García Márquez")
+    print("c) Miguel de Cervantes")
+    print("d) Leo Tolstoy")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "c":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 6
+    print("\n6) Qual é o maior deserto do mundo?")
+    print("a) Deserto do Saara")
+    print("b) Deserto da Arábia")
+    print("c) Deserto de Gobi")
+    print("d) Antártica")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "d":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 7
+    print("\n7) Qual é a língua mais falada no mundo?")
+    print("a) Inglês")
+    print("b) Mandarim")
+    print("c) Espanhol")
+    print("d) Hindi")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "b":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 8
+    print("\n8) Qual é a moeda oficial do Japão?")
+    print("a) Yuan")
+    print("b) Won")
+    print("c) Yen")
+    print("d) Baht")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "c":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 9
+    print("\n9) Quem pintou o teto da Capela Sistina?")
+    print("a) Leonardo da Vinci")
+    print("b) Rafael")
+    print("c) Michelangelo")
+    print("d) Donatello")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "c":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 10
+    print("\n10) Qual é o país mais populoso da América do Sul?")
+    print("a) Argentina")
+    print("b) Colômbia")
+    print("c) Brasil")
+    print("d) Peru")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "c":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 11
+    print("\n11) Quantos segundos há em uma hora?")
+    print("a) 3.600")
+    print("b) 6.000")
+    print("c) 3.000")
+    print("d) 6.600")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "a":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 12
+    print("\n12) Qual é a capital da Austrália?")
+    print("a) Sydney")
+    print("b) Melbourne")
+    print("c) Canberra")
+    print("d) Brisbane")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "c":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 13
+    print("\n13) Qual desses animais é um mamífero?")
+    print("a) Tartaruga")
+    print("b) Tubarão")
+    print("c) Golfinho")
+    print("d) Polvo")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "c":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 14
+    print("\n14) Quem desenvolveu a teoria da relatividade?")
+    print("a) Isaac Newton")
+    print("b) Albert Einstein")
+    print("c) Galileo Galilei")
+    print("d) Nikola Tesla")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "b":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 15
+    print("\n15) Em que continente está localizado o deserto do Saara?")
+    print("a) Ásia")
+    print("b) África")
+    print("c) América do Norte")
+    print("d) Oceania")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "b":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    #ver se passou
+    if pontuacao >= pontuacao_minima_nivel2:
+        print(f"\nParabéns! Você acertou {pontuacao} de 15 perguntas e passou para o Nível 3!")
+        # Aqui você pode adicionar o código para o Nível 3
+    else:
+        print(f"\nVocê acertou {pontuacao} de 15 perguntas. Infelizmente, não atingiu a pontuação mínima para passar para o próximo nível. Fim de jogo.")
+
+else:
+    print("\nFim de jogo.")
+
+    # Continuando do Nível 2...
+
+# Verificar se o jogador passou para o Nível 3
+if pontuacao >= pontuacao_minima_nivel2:
+    print(f"\nParabéns! Você acertou {pontuacao} de 15 perguntas e passou para o Nível 3!")
+    
+    # Resetando a pontuação para o próximo nível
+    pontuacao = 0
+    pontuacao_minima_nivel3 = 17  # Número mínimo de acertos para vencer o jogo
+
+    # Nível 3 - Difícil
+    print("\nNível 3 - Difícil")
+
+    # Pergunta 1
+    print("1) Qual é o país com o maior número de ilhas no mundo?")
+    print("a) Indonésia")
+    print("b) Filipinas")
+    print("c) Suécia")
+    print("d) Finlândia")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "c":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 2
+    print("\n2) Qual desses países não faz parte do Reino Unido?")
+    print("a) Irlanda do Norte")
+    print("b) Escócia")
+    print("c) País de Gales")
+    print("d) Irlanda")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "d":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 3
+    print("\n3) Em que ano a Segunda Guerra Mundial terminou?")
+    print("a) 1945")
+    print("b) 1946")
+    print("c) 1944")
+    print("d) 1943")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "a":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 4
+    print("\n4) Quem inventou o telefone?")
+    print("a) Thomas Edison")
+    print("b) Nikola Tesla")
+    print("c) Alexander Graham Bell")
+    print("d) Guglielmo Marconi")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "c":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 5
+    print("\n5) Qual é o maior planeta anão do sistema solar?")
+    print("a) Plutão")
+    print("b) Ceres")
+    print("c) Haumea")
+    print("d) Éris")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "a":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 6
+    print("\n6) Qual é a montanha mais alta do continente europeu?")
+    print("a) Mont Blanc")
+    print("b) Monte Elbrus")
+    print("c) Monte Etna")
+    print("d) Monte Olimpo")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "b":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 7
+    print("\n7) Qual cientista é conhecido como o 'pai da genética'?")
+    print("a) Charles Darwin")
+    print("b) Gregor Mendel")
+    print("c) Louis Pasteur")
+    print("d) James Watson")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "b":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 8
+    print("\n8) Qual é a substância mais dura conhecida pelo homem?")
+    print("a) Quartzo")
+    print("b) Coríndon")
+    print("c) Diamante")
+    print("d) Topázio")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "c":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 9
+    print("\n9) Quem é o autor da teoria da evolução das espécies?")
+    print("a) Charles Darwin")
+    print("b) Isaac Newton")
+    print("c) Albert Einstein")
+    print("d) Galileu Galilei")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "a":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 10
+    print("\n10) Qual é o único mamífero que pode voar?")
+    print("a) Morcego")
+    print("b) Esquilo voador")
+    print("c) Pinguim")
+    print("d) Pardal")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "a":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Nova Pergunta 11
+    print("\n11) Qual cidade é conhecida como 'A Cidade Luz'?")
+    print("a) Londres")
+    print("b) Paris")
+    print("c) Nova York")
+    print("d) Tóquio")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "b":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 12
+    print("\n12) Qual é o oceano mais profundo?")
+    print("a) Oceano Atlântico")
+    print("b) Oceano Índico")
+    print("c) Oceano Pacífico")
+    print("d) Oceano Ártico")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "c":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 13
+    print("\n13) Qual o nome do primeiro satélite artificial lançado ao espaço?")
+    print("a) Sputnik")
+    print("b) Apollo")
+    print("c) Voyager")
+    print("d) Explorer")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "a":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 14
+    print("\n14) Qual a molécula essencial para a vida na Terra?")
+    print("a) H2O")
+    print("b) CO2")
+    print("c) O2")
+    print("d) N2")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "a":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 15
+    print("\n15) Em qual país estão localizadas as Pirâmides de Gizé?")
+    print("a) México")
+    print("b) Peru")
+    print("c) Egito")
+    print("d) Índia")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "c":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 16
+    print("\n16) Qual o país com maior produção de café?")
+    print("a) Colômbia")
+    print("b) Vietnã")
+    print("c) Brasil")
+    print("d) Indonésia")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "c":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 17
+    print("\n17) Qual a capital da Coreia do Sul?")
+    print("a) Tóquio")
+    print("b) Pyongyang")
+    print("c) Seul")
+    print("d) Busan")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "c":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 18
+    print("\n18) Quem pintou 'A Noite Estrelada'?")
+    print("a) Pablo Picasso")
+    print("b) Vincent van Gogh")
+    print("c) Salvador Dalí")
+    print("d) Claude Monet")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "b":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 19
+    print("\n19) Qual país ganhou a Copa do Mundo de Futebol em 2018?")
+    print("a) Alemanha")
+    print("b) Brasil")
+    print("c) França")
+    print("d) Argentina")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "c":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Pergunta 20
+    print("\n20) Qual é a galáxia em que vivemos?")
+    print("a) Andrômeda")
+    print("b) Triângulo")
+    print("c) Via Láctea")
+    print("d) Nuvem de Magalhães")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "c":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Verificar se o jogador venceu o jogo
+    if pontuacao >= pontuacao_minima_nivel3:
+        print(f"\nParabéns! Você acertou {pontuacao} de 20 perguntas e venceu o jogo!")
+    else:
+        print(f"\nVocê acertou {pontuacao} de 20 perguntas. Infelizmente, não atingiu a pontuação mínima para vencer o jogo. Fim de jogo.")
+
+    # Calculando QI estimado
+    qi_estimado = 80 + (pontuacao * 2)
+    print(f"\nEstimativa de QI com base nos acertos: {qi_estimado}")
+
+else:
+    print("\nVocê não passou para o Nível 3. Fim de jogo.")
+
+
+    # Pergunta 20
+    print("\n20) Qual é o órgão mais longo do corpo humano?")
+    print("a) Estômago")
+    print("b) Intestino grosso")
+    print("c) Intestino delgado")
+    print("d) Esôfago")
+    resposta = input("Escolha a opção correta (a, b, c ou d): ")
+
+    if resposta.lower() == "c":
+        print("Correto!")
+        pontuacao += 1
+    else:
+        print("Incorreto!")
+
+    # Verificar se o jogador venceu o jogo
+    if pontuacao >= pontuacao_minima_nivel3:
+        print(f"\nParabéns! Você acertou {pontuacao} de 20 perguntas e venceu o jogo!")
+    else:
+        print(f"\nVocê acertou {pontuacao} de 20 perguntas. Infelizmente, não atingiu a pontuação mínima para vencer o jogo. Fim de jogo.")
